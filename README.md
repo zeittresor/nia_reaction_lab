@@ -1,10 +1,5 @@
 # NIA Conversation Reaction Lab
 
-Note: Early Beta Version (use on your own risk!)
-
-<img width="700" height="478" alt="Interface" src="https://github.com/user-attachments/assets/c95ff0bb-db06-48f0-a716-3099ddcca23e" />
-
-<img width="908" height="478" alt="NIA" src="https://github.com/user-attachments/assets/babac22e-b591-44e7-8ff5-5836008bfe38" />
 
 ## English
 
@@ -19,6 +14,12 @@ Connect the NIA, start `app\run_windows.bat`, and wait until the window appears.
 
 ### What the project is for
 The goal is not medical diagnosis and not mind reading. The goal is to keep a structured record of human reactions during AI conversations so that later analysis can compare language, timing, and signal changes.
+
+Note: Early Beta Version (use on your own risk!)
+
+<img width="700" height="478" alt="Interface" src="https://github.com/user-attachments/assets/c95ff0bb-db06-48f0-a716-3099ddcca23e" />
+
+<img width="908" height="478" alt="NIA" src="https://github.com/user-attachments/assets/babac22e-b591-44e7-8ff5-5836008bfe38" />
 
 ---
 
