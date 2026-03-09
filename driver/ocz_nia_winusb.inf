@@ -1,0 +1,38 @@
+; Experimental WinUSB binding for the OCZ/BCInet NIA on Windows 10/11.
+; This INF is a practical development base, not a production-signed final package.
+;
+; Known community identifiers: VID_1234 / PID_0000
+;
+[Version]
+Signature   = "$WINDOWS NT$"
+Class       = USBDevice
+ClassGuid   = {88BAE032-5A81-49f0-BC3D-A4FF138216D6}
+Provider    = %ProviderName%
+DriverVer   = 03/09/2026,1.1.0.0
+CatalogFile = ocz_nia_winusb.cat
+PnpLockdown = 1
+
+[Manufacturer]
+%ProviderName% = DeviceList,NTamd64
+
+[DeviceList.NTamd64]
+%DeviceName% = USB_Install, USB\VID_1234&PID_0000
+%DeviceName% = USB_Install, USB\VID_1234&PID_0000&MI_00
+
+[USB_Install]
+Include = winusb.inf
+Needs   = WINUSB.NT
+
+[USB_Install.Services]
+Include = winusb.inf
+Needs   = WINUSB.NT.Services
+
+[USB_Install.HW]
+AddReg = Dev_AddReg
+
+[Dev_AddReg]
+HKR,,DeviceInterfaceGUIDs,0x10000,"{89B5E07F-6F12-45C4-B2A1-FA6E28AA55A4}"
+
+[Strings]
+ProviderName = "OpenAI Experimental"
+DeviceName   = "OCZ NIA (Experimental WinUSB Binding)"
