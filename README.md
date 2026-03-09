@@ -1,5 +1,7 @@
 # NIA Conversation Reaction Lab
 
+<img width="908" height="478" alt="NIA" src="https://github.com/user-attachments/assets/babac22e-b591-44e7-8ff5-5836008bfe38" />
+
 ## English
 
 ### What this app is
